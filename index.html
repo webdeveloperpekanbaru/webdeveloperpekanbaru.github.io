@@ -3,76 +3,62 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Professional CV Profile</title>
+    <!-- Meta Title -->
+    <title>Mohd Purwadi: Web Developer Pekanbaru</title>
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon" />
+    <!-- Meta Description -->
+    <meta
+      name="description"
+      content="Web Developer Pekanbaru terpercaya untuk jasa pembuatan website profesional, cepat, dan SEO friendly. Hubungi kami untuk solusi digital terbaik."
+    />
+
+    <!-- Meta Keywords -->
+    <meta
+      name="keywords"
+      content="Web Developer Pekanbaru, Jasa Pembuatan Website Pekanbaru, Developer Website Riau, Jasa Website Murah Pekanbaru, Freelance Web Developer"
+    />
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://webdeveloperpekanbaru.github.io/" />
+
+    <!-- Open Graph (Facebook, WhatsApp, LinkedIn) -->
+    <meta
+      property="og:title"
+      content="Web Developer Pekanbaru - Jasa Pembuatan Website Profesional"
+    />
+    <meta
+      property="og:description"
+      content="Butuh jasa web developer Pekanbaru? Kami siap bantu dengan layanan profesional dan hasil optimal."
+    />
+    <meta property="og:image" content="./images/profile.jpg" />
+    <meta
+      property="og:url"
+      content="https://webdeveloperpekanbaru.github.io/"
+    />
+    <meta property="og:type" content="website" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="Mohd Purwadi: Web Developer Pekanbaru"
+    />
+    <meta
+      name="twitter:description"
+      content="Jasa pembuatan website di Pekanbaru dengan layanan cepat, profesional, dan SEO friendly."
+    />
+    <meta name="twitter:image" content="./images/profile.jpg" />
+
     <script src="https://cdn.tailwindcss.com"></script>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     />
-    <style>
-      /* Custom CSS for transitions and animations */
-      .page-transition {
-        transition: opacity 0.3s ease-in-out;
-      }
-      .page-hidden {
-        opacity: 0;
-        pointer-events: none;
-        position: absolute;
-        width: 100%;
-      }
-      .page-visible {
-        opacity: 1;
-        position: relative;
-      }
-      .active-menu-item {
-        background-color: rgba(255, 255, 255, 0.1);
-        border-left: 4px solid #3b82f6;
-      }
-      .profile-image {
-        transition: transform 0.3s ease;
-      }
-      .profile-image:hover {
-        transform: scale(1.05);
-      }
-      .skill-bar {
-        transition: width 1.5s ease-in-out;
-      }
-      .timeline-item:not(:last-child)::after {
-        content: "";
-        position: absolute;
-        left: 23px;
-        top: 32px;
-        height: calc(100% - 32px);
-        width: 2px;
-        background-color: #3b82f6;
-      }
-      @media (max-width: 768px) {
-        .mobile-menu-hidden {
-          transform: translateX(-100%);
-        }
-        .mobile-menu-visible {
-          transform: translateX(0);
-        }
-        .mobile-menu-overlay {
-          display: none;
-        }
-        .mobile-menu-overlay.active {
-          display: block;
-          position: fixed;
-          top: 0;
-          left: 0;
-          right: 0;
-          bottom: 0;
-          background-color: rgba(0, 0, 0, 0.5);
-          z-index: 10;
-        }
-        .sidebar {
-          position: fixed;
-          z-index: 20;
-          transition: transform 0.3s ease-in-out;
-        }
-      }
-    </style>
+    <link rel="stylesheet" href="style.css" />
+    <meta
+      name="google-site-verification"
+      content="XyZESz_ntmwG6HTm_uagfQdfyKVLeGhnqlfa2dCF2LU"
+    />
   </head>
   <body
     class="bg-gray-900 text-gray-100 flex flex-col md:flex-row h-screen overflow-hidden"
@@ -94,16 +80,18 @@
       <div class="p-6 flex flex-col items-center">
         <div class="relative mb-4">
           <img
-            src="https://randomuser.me/api/portraits/men/75.jpg"
+            src="./images/profile.jpg"
             alt="Profile"
-            class="profile-image w-32 h-32 rounded-full object-cover border-4 border-blue-500 shadow-lg"
+            class="profile-image w-32 h-32 rounded-full object-cover border-2 shadow-lg"
           />
-          <div class="absolute bottom-0 right-0 bg-blue-500 rounded-full p-1">
+          <div
+            class="absolute bottom-5 right-0 bg-blue-500 rounded-full w-6 h-6 flex items-center justify-center"
+          >
             <i class="fas fa-check text-white text-xs"></i>
           </div>
         </div>
-        <h1 class="text-xl font-bold">John Doe</h1>
-        <p class="text-blue-400 text-sm">Senior Web Developer</p>
+        <h1 class="text-xl font-bold">Mohd Purwadi</h1>
+        <p class="text-blue-400 text-sm">Web Developer</p>
         <div class="flex mt-3 space-x-2">
           <a href="#" class="text-gray-400 hover:text-blue-400 transition">
             <i class="fab fa-linkedin-in"></i>
@@ -182,12 +170,17 @@
 
       <!-- Download CV Button -->
       <div class="p-4 border-t border-gray-700">
-        <button
-          class="w-full bg-blue-600 hover:bg-blue-700 text-white py-2 px-4 rounded flex items-center justify-center transition"
+        <a
+          target="_blank"
+          href="https://drive.google.com/file/d/11K1m9bmBo_ypwKL7y_xP13GjzadOCEzh/view?pli=1"
         >
-          <i class="fas fa-download mr-2"></i>
-          Download CV
-        </button>
+          <button
+            class="w-full bg-blue-600 hover:bg-blue-700 text-white py-2 px-4 rounded flex items-center justify-center transition"
+          >
+            <i class="fas fa-download mr-2"></i>
+            Download CV
+          </button></a
+        >
       </div>
     </div>
 
@@ -206,18 +199,22 @@
 
           <div class="bg-gray-800 rounded-lg p-6 shadow-lg mb-8">
             <p class="mb-4 leading-relaxed">
-              Hello! I'm <span class="text-blue-400">John Doe</span>, a
-              passionate Senior Web Developer with over 8 years of experience in
-              creating modern, responsive, and user-friendly web applications. I
-              specialize in JavaScript frameworks like React and Vue.js, and I'm
-              proficient in both front-end and back-end development.
+              Sebagai seorang Web Developer di Pekanbaru, saya hadir untuk
+              membantu bisnis Anda memiliki website yang profesional, cepat, dan
+              menarik. Di era digital saat ini, kehadiran online sangat penting
+              untuk menjangkau pelanggan lebih luas. Dengan pengalaman dalam
+              pembuatan website berbasis SEO, saya dapat memastikan setiap
+              halaman dirancang tidak hanya menarik secara visual tetapi juga
+              mudah ditemukan di mesin pencari seperti Google.
             </p>
             <p class="leading-relaxed">
-              My approach combines technical expertise with creative
-              problem-solving to deliver high-quality solutions that meet both
-              business objectives and user needs. I'm constantly learning new
-              technologies and methodologies to stay at the forefront of web
-              development.
+              Saya juga melayani berbagai kebutuhan pembuatan website, mulai
+              dari profil perusahaan, toko online, hingga landing page untuk
+              promosi. Dengan mengutamakan kualitas, keamanan, dan kecepatan
+              loading, saya siap menjadi mitra digital terbaik untuk bisnis Anda
+              di Pekanbaru dan sekitarnya. Percayakan pengembangan website Anda
+              kepada tim profesional yang memahami kebutuhan pasar lokal dan
+              perkembangan teknologi terkini.
             </p>
           </div>
 
@@ -230,7 +227,7 @@
               <ul class="space-y-3">
                 <li class="flex">
                   <span class="w-32 text-gray-400">Name:</span>
-                  <span>John Doe</span>
+                  <span>Mohd Purwadi</span>
                 </li>
                 <li class="flex">
                   <span class="w-32 text-gray-400">Age:</span>
@@ -238,15 +235,15 @@
                 </li>
                 <li class="flex">
                   <span class="w-32 text-gray-400">Location:</span>
-                  <span>San Francisco, CA</span>
+                  <span>Pekanbaru, Riau</span>
                 </li>
                 <li class="flex">
                   <span class="w-32 text-gray-400">Email:</span>
-                  <span>john.doe@example.com</span>
+                  <span>mohdpurwadi@gmail.com</span>
                 </li>
                 <li class="flex">
                   <span class="w-32 text-gray-400">Phone:</span>
-                  <span>+1 (555) 123-4567</span>
+                  <span>-</span>
                 </li>
               </ul>
             </div>
@@ -254,35 +251,32 @@
             <div class="bg-gray-800 rounded-lg p-6 shadow-lg">
               <h2 class="text-xl font-semibold mb-4 flex items-center">
                 <i class="fas fa-trophy mr-2 text-blue-400"></i>
-                Achievements
+                Certificate
               </h2>
               <ul class="space-y-3">
                 <li class="flex items-start">
                   <i class="fas fa-check text-green-400 mt-1 mr-2"></i>
                   <span
-                    >Led a team that developed an award-winning SaaS platform
-                    with over 50,000 users</span
+                    >Belajar Cara Menerapkan SEO pada Website untuk Menjadi
+                    Spesialis Pemasaran</span
+                  >
+                </li>
+                <li class="flex items-start">
+                  <i class="fas fa-check text-green-400 mt-1 mr-2"></i>
+                  <span>Responsive Web Design (Freecodecamp.org)</span>
+                </li>
+                <li class="flex items-start">
+                  <i class="fas fa-check text-green-400 mt-1 mr-2"></i>
+                  <span
+                    >SEO 101: Cara Membuat Website Eksis di Halaman Depan
+                    Google</span
                   >
                 </li>
                 <li class="flex items-start">
                   <i class="fas fa-check text-green-400 mt-1 mr-2"></i>
                   <span
-                    >Recognized as "Developer of the Year" at Tech Innovations
-                    2022</span
-                  >
-                </li>
-                <li class="flex items-start">
-                  <i class="fas fa-check text-green-400 mt-1 mr-2"></i>
-                  <span
-                    >Published 3 technical articles in leading web development
-                    journals</span
-                  >
-                </li>
-                <li class="flex items-start">
-                  <i class="fas fa-check text-green-400 mt-1 mr-2"></i>
-                  <span
-                    >Open source contributor to major projects like React and
-                    Vue.js</span
+                    >Memulai Dasar Pemrograman untuk Menjadi Pengembang
+                    Software</span
                   >
                 </li>
               </ul>
@@ -301,9 +295,7 @@
 
           <div class="space-y-6">
             <!-- Timeline Item 1 -->
-            <div
-              class="bg-gray-800 rounded-lg p-6 shadow-lg relative timeline-item pl-16"
-            >
+            <div class="bg-gray-800 rounded-lg p-6 shadow-lg relative pl-16">
               <div
                 class="absolute left-6 top-6 w-8 h-8 rounded-full bg-blue-500 flex items-center justify-center"
               >
@@ -313,30 +305,64 @@
                 class="flex flex-col md:flex-row md:justify-between md:items-start"
               >
                 <div>
-                  <h3 class="text-xl font-semibold">Senior Web Developer</h3>
-                  <p class="text-blue-400">TechSolutions Inc.</p>
+                  <h3 class="text-xl font-semibold">
+                    WordPress Development (Remote)
+                  </h3>
+                  <p class="text-blue-400">PT. Media Cyber Mandiripos</p>
                 </div>
                 <span class="text-gray-400 md:mt-0 mt-2"
-                  >Jan 2020 - Present</span
+                  >Jan 2012 - Present</span
                 >
               </div>
               <div class="mt-4">
                 <ul class="list-disc pl-5 space-y-2 text-gray-300">
                   <li>
-                    Lead a team of 5 developers in building enterprise-level web
-                    applications
+                    Mengembangkan dan menyesuaikan tema WordPress sesuai
+                    kebutuhan klien atau perusahaan.
                   </li>
                   <li>
-                    Architected and implemented a micro-frontend system that
-                    improved performance by 40%
+                    Mengoptimalkan tampilan dan fungsionalitas tema agar
+                    responsif di berbagai perangkat.
                   </li>
                   <li>
-                    Introduced CI/CD pipelines reducing deployment time from 2
-                    hours to 15 minutes
+                    Membuat, mengatur, dan memodifikasi plugin untuk menambah
+                    atau menyesuaikan fitur-fitur website.
                   </li>
                   <li>
-                    Mentored junior developers and conducted technical
-                    interviews
+                    Menyelesaikan bug dan meningkatkan kompatibilitas plugin
+                    dengan versi WordPress terbaru.
+                  </li>
+                  <li>
+                    Menambahkan dan mengatur konten situs secara berkala
+                    menggunakan Gutenberg atau page builder seperti Elementor.
+                  </li>
+                  <li>
+                    Mengimplementasikan praktik SEO on-page untuk meningkatkan
+                    peringkat pencarian Google.
+                  </li>
+                  <li>
+                    Melakukan backup rutin, update tema/plugin, dan pengamanan
+                    situs dari malware atau serangan siber.
+                  </li>
+                  <li>
+                    Monitoring uptime dan performa website secara berkala
+                    menggunakan tools seperti Google Search Console & GTmetrix.
+                  </li>
+                  <li>
+                    Berkoordinasi dengan tim desain, konten, dan manajemen via
+                    platform remote (seperti Slack, Trello, atau Zoom).
+                  </li>
+                  <li>
+                    Menyusun laporan perkembangan proyek dan dokumentasi teknis
+                    secara berkala.
+                  </li>
+                  <li>
+                    Mengoptimalkan kecepatan loading dan performa situs
+                    menggunakan caching, CDN, dan optimasi gambar.
+                  </li>
+                  <li>
+                    Menggunakan tools seperti Lighthouse dan PageSpeed Insights
+                    untuk pengujian dan perbaikan performa.
                   </li>
                 </ul>
               </div>
@@ -963,142 +989,6 @@
       </div>
     </div>
 
-    <script>
-      // SPA Controller
-      const SPAController = (function () {
-        // Private variables
-        const pages = {
-          about: document.getElementById("about-page"),
-          experience: document.getElementById("experience-page"),
-          education: document.getElementById("education-page"),
-          skills: document.getElementById("skills-page"),
-          projects: document.getElementById("projects-page"),
-          contact: document.getElementById("contact-page"),
-        };
-
-        let currentPage = "about";
-        const menuItems = document.querySelectorAll(".menu-item");
-        const mobileMenuButton = document.getElementById("mobile-menu-button");
-        const sidebar = document.getElementById("sidebar");
-        const mobileMenuOverlay = document.getElementById(
-          "mobile-menu-overlay"
-        );
-
-        // Initialize the app
-        function init() {
-          setupEventListeners();
-          handleHashChange();
-          window.addEventListener("hashchange", handleHashChange);
-        }
-
-        // Set up event listeners
-        function setupEventListeners() {
-          // Menu item clicks
-          menuItems.forEach((item) => {
-            item.addEventListener("click", function (e) {
-              e.preventDefault();
-              const targetPage = this.getAttribute("href").substring(1);
-              navigateTo(targetPage);
-
-              // Close mobile menu if open
-              if (sidebar.classList.contains("mobile-menu-visible")) {
-                toggleMobileMenu();
-              }
-            });
-          });
-
-          // Mobile menu button
-          mobileMenuButton.addEventListener("click", toggleMobileMenu);
-
-          // Mobile menu overlay
-          mobileMenuOverlay.addEventListener("click", toggleMobileMenu);
-        }
-
-        // Handle hash changes
-        function handleHashChange() {
-          const hash = window.location.hash.substring(1) || "about";
-          if (pages[hash]) {
-            navigateTo(hash);
-          }
-        }
-
-        // Navigate to a specific page
-        function navigateTo(page) {
-          if (page !== currentPage && pages[page]) {
-            // Hide current page
-            pages[currentPage].classList.remove("page-visible");
-            pages[currentPage].classList.add("page-hidden");
-
-            // Show new page
-            pages[page].classList.remove("page-hidden");
-            pages[page].classList.add("page-visible");
-
-            // Update current page
-            currentPage = page;
-
-            // Update URL hash
-            window.location.hash = page;
-
-            // Update active menu item
-            updateActiveMenuItem(page);
-
-            // Animate skill bars if navigating to skills page
-            if (page === "skills") {
-              animateSkillBars();
-            }
-          }
-        }
-
-        // Update active menu item
-        function updateActiveMenuItem(page) {
-          menuItems.forEach((item) => {
-            const itemPage = item.getAttribute("href").substring(1);
-            if (itemPage === page) {
-              item.parentElement.classList.add("active-menu-item");
-            } else {
-              item.parentElement.classList.remove("active-menu-item");
-            }
-          });
-        }
-
-        // Toggle mobile menu
-        function toggleMobileMenu() {
-          sidebar.classList.toggle("mobile-menu-hidden");
-          sidebar.classList.toggle("mobile-menu-visible");
-          mobileMenuOverlay.classList.toggle("active");
-
-          // Change icon based on state
-          const isOpen = sidebar.classList.contains("mobile-menu-visible");
-          mobileMenuButton.innerHTML = isOpen
-            ? '<i class="fas fa-times text-white"></i>'
-            : '<i class="fas fa-bars text-white"></i>';
-        }
-
-        // Animate skill bars
-        function animateSkillBars() {
-          const skillBars = document.querySelectorAll(".skill-bar");
-          skillBars.forEach((bar) => {
-            // Reset animation by removing and re-adding the width
-            const width = bar.style.width;
-            bar.style.width = "0";
-            // Force reflow
-            void bar.offsetWidth;
-            // Restore width with animation
-            bar.style.width = width;
-          });
-        }
-
-        // Public API
-        return {
-          init: init,
-          navigateTo: navigateTo,
-        };
-      })();
-
-      // Initialize the app when DOM is loaded
-      document.addEventListener("DOMContentLoaded", function () {
-        SPAController.init();
-      });
-    </script>
+    <script src="script.js"></script>
   </body>
 </html>
