@@ -1,4 +1,8 @@
 /* Custom CSS for transitions and animations */
+.page-transition a {
+  color: salmon;
+}
+
 .page-transition {
   transition: opacity 0.3s ease-in-out;
 }
